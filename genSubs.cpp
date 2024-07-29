@@ -1,4 +1,4 @@
-//Generating subsets
+//Generating Subsets
 
 //O(2^(n))
 vector<vector<long long>> genSubs(vector<long long> &v) {
