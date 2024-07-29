@@ -28,6 +28,8 @@ long long MaxSubSum(vector<long long> &v) {
     return best;
 }
 
+//Kadane's algorithm
+
 //O(n)
 long long MaxSubSum(vector<long long> &v) {
     long long best = -1e18, curr = -1e18;
