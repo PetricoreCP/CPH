@@ -1,7 +1,7 @@
 //Maximum Subarray Sum
 
 //O(n^(3))
-long long MaxSubSum(vector<long long> &v) {
+long long maxSubSum(vector<long long> &v) {
     long long best = -1e18;
     for(int x = 0; x < v.size(); x ++) {
         for(int y = x; y < v.size(); y ++) {
@@ -16,7 +16,7 @@ long long MaxSubSum(vector<long long> &v) {
 }
 
 //O(n^(2))
-long long MaxSubSum(vector<long long> &v) {
+long long maxSubSum(vector<long long> &v) {
     long long best = -1e18;
     for(int x = 0; x < v.size(); x ++) {
         long long curr = 0;
@@ -31,7 +31,7 @@ long long MaxSubSum(vector<long long> &v) {
 //Kadane's algorithm
 
 //O(n)
-long long MaxSubSum(vector<long long> &v) {
+long long maxSubSum(vector<long long> &v) {
     long long best = -1e18, curr = -1e18;
     for(int x = 0; x < v.size(); x ++) {
         curr = max(curr + v[x], v[x]);
