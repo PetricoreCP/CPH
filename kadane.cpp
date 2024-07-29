@@ -1,4 +1,4 @@
-//Kadane's algorithm
+//Kadane's Algorithm
 
 //O(n)
 long long kadane(vector<long long> &v) {
